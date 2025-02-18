@@ -1,0 +1,286 @@
+.main-card {
+  background-color: var(--color-green-background);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.details-container {
+  display: flex;
+  gap: 30px;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.image-container img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 2px solid var(--color-green-border);
+}
+
+.animal-name {
+  font-size: 40px;
+  margin: 10px 0 5px;
+  color: var(--color-green);
+  text-align: center;
+}
+
+.animal-gender {
+  font-size: 12px;
+  background-color: var(--color-green-fade);
+  color: var(--color-white);
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.adopt-button {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.adopt-button:hover {
+  background-color: var(--color-light-green);
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-with-animal {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-green-border);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-with-animal h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--color-green-border);
+  font-size: 1.4rem;
+}
+
+.card-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-label {
+  font-weight: bold;
+  color: var(--color-green-border);
+}
+
+.card-value {
+  color: var(--color-grey);
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.available {
+  color: var(--color-green);
+}
+
+.stop {
+  color: var(--color-red);
+}
+
+.paw-icon {
+  font-size: 20px;
+}
+
+.adoption-form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adoption-form-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--color-grey);
+}
+
+.adoption-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--color-light-grey);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--color-white);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.space-16 {
+  margin-top: 16px;
+}
+
+.adoption-form-elements {
+  display: block;
+  font-weight: 500;
+}
+
+.adoption-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--color-grey);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  width: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons-form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.submit-btn {
+  background: var(--color-light-green);
+  color: var(--color-white);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: var(--color-green);
+}
+
+@media (max-width: 1024px) {
+  .details-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .animal-name {
+    font-size: 32px;
+  }
+
+  .adoption-form-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-card {
+    padding: 20px;
+  }
+
+  .animal-name {
+    font-size: 28px;
+  }
+
+  .animal-gender {
+    font-size: 10px;
+  }
+
+  .adopt-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .card-with-animal {
+    padding: 15px;
+  }
+
+  .card-with-animal h3 {
+    font-size: 1.2rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

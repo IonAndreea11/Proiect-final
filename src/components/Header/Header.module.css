@@ -1,0 +1,105 @@
+.navbar {
+  position: absolute !important;
+  width: 100%;
+  background: transparent !important;
+  transition: background 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.scrolled {
+  background: rgba(0, 0, 0, 0.8) !important;
+  transition: background 0.3s ease-in-out;
+}
+
+.navLink {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0;
+}
+
+.navLink,
+.navLink:hover,
+.navLink:focus,
+.navLink:active {
+  background-color: transparent !important;
+  color: var(--color-white) !important;
+}
+
+.navLink:hover {
+  color: var(--color-light-green) !important;
+}
+
+.carousel-container {
+  width: 100%;
+}
+
+.btn-secondary {
+  background-color: var(--color-green) !important;
+  border-color: var(--color-green) !important;
+  color: white !important;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-green) !important;
+  border-color: var(--color-green) !important;
+}
+
+.logoTitle {
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logoTitle:hover {
+  color: var(--color-light-green);
+}
+
+.carousel-img {
+  display: block;
+  width: 100%;
+}
+
+.username-text {
+  margin-right: 3px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    position: sticky;
+    background: rgba(0, 0, 0, 0.9) !important;
+    padding: 8px 15px;
+  }
+
+  .navLink {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoTitle {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .navLink {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.carousel-container {
+  width: 100%;
+}
+
+.logoTitle {
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
