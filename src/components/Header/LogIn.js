@@ -8,7 +8,7 @@ function Login({ setShowLogin, setIsLoggedIn }) {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError(""); // Resetăm erorile
+    setError(""); 
 
     const credentials = { username, password };
 
@@ -23,7 +23,7 @@ function Login({ setShowLogin, setIsLoggedIn }) {
 
       if (data.token) {
         localStorage.setItem("token", data.token);
-        localStorage.setItem("username", username); // Salvăm username-ul
+        localStorage.setItem("username", username); 
         setIsLoggedIn(true);
         setShowLogin(false);
       } else {
